@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.a{transform:rotate(45deg);}
+	.d{animation: fontchange 1.4s ease-in-out 0.7s infinite;
+	-webkit-animation: fontchange 1.4s ease-in-out 0.7s infinite;}
+	@-webkit-keyframes fontchange{ 
+
+ 	0%{font-size:10px;} 
+
+ 	30%{font-size:15px;} 
+
+ 	100%{font-siez:12px;} 
+
+ 	}
+ 	.c{animation: fontchange 1.4s ease-in-out 0.7s infinite;
+	-webkit-animation: sizechange 1.4s ease-in-out 0.7s infinite;} 
+	@-webkit-keyframes sizechange{ 
+
+ 	0%{width:20px;} 
+
+ 	30%{width:35px;} 
+
+ 	100%{width:50px;} 
+
+ 	}
+ 	.a{-webkit-animation: gold_shake 0.8s linear 0s infinite;}
+ 	@-webkit-keyframes gold_shake{ 
+	
+ 	0%{transform: rotate(20deg);} 
+
+ 	30%{transform: rotate(60deg);} 
+
+ 	100%{transform: rotate(80deg);} 
+
+ 	}
+ 	.b{-webkit-animation: star_shake 0.8s linear 0s infinite;}
+ 	@-webkit-keyframes star_shake{ 
+	
+ 	0%{transform: translate(50px,100px);} 
+
+ 	30%{transform: translate(55px,105px);} 
+
+ 	100%{transform: translate(60px,110px);} 
+
+ 	}
+	</style>
+</head>
+<body style="background:black;">
+	<p style="height:180px;"><img src="img/a.png" alt="" class="a"></p>
+	<p style="height:220px;"><img src="img/b.png" alt="" class="b"></p>
+	<p style="height:80px;"><img src="img/c.png" alt="" class="c"></p>
+	<p style="height:80px;"><h1 class="d"style="color:yellow;">动起来</h1></p>
+	
+</body>
+</html>
